@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block backa %} 'http://127.0.0.1:5000/input_n'{% endblock %}
+{% block body %}
+<form class="form" method="post">
+  {{ generate_fields(eq_form) }}
+  <button type="submit" class="btn btn-success">
+    <i class="fas fa-pencil-ruler"></i>
+    Solve!
+  </button>
+</form>
+<br><br>
+{% if solved %}
+<script>
+    obj = {}
+    {% for a,b in solution %}
+      obj['{{ a }}'] = {{ b }}
+    {% endfor %}
+    console.log(obj)
+    run(obj)
+    // swal('hi')
+
+</script>
+{% endif %}
+{% endblock %}

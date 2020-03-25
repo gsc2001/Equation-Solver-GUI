@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<!-- Form to enter no. of equations -->
+<form method="post">
+  {{ generate_fields(n_form) }}
+  <button type="submit" class="btn btn-info">
+    Next
+    <i class="fas fa-angle-double-right fa-lg "></i>
+  </button>
+</form>
+{% endblock %}

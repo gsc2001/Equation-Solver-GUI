@@ -1,0 +1,14 @@
+{
+  "name": "equation_solver",
+  "version": "1.0.0",
+  "description": "Solves n-variable equations given n equations in a click",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Gurkirat Singh",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.1.1"
+  }
+}

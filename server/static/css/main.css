@@ -1,0 +1,35 @@
+.popupback{
+    transition: 0.5s ease-in-out;
+    /* visibility: hidden; */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup{
+  z-index: 1000001;
+  position: fixed;
+  top:10vh;
+  background-color: white;
+  border-radius: 10px;
+}
+.noround{
+  border-radius: 0;
+}
+.my-btn{
+  top:1vh;
+  left:1vw;
+  font-weight: 400;
+  /* width:5%;
+  height:5%;  */
+  position:fixed;
+  font-size:100%
+}
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,38 @@
+{% from '_form.html' import generate_fields with context %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equation Solver</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='font-awesome/css/all.css') }}"
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <!-- Sweetalert -->
+    <script src="{{ url_for('static',filename='js/sweetalert1.min.js') }}"></script>
+    <!-- Js for popup -->
+    <script src="{{ url_for('static',filename='js/pops_up.js') }}"></script>
+  </head>
+  <body>
+
+    <div class="jumbotron " style="background-color:#3498db; color:white" >
+      {% if back %}
+      <button class="btn btn-info my-btn" onclick="window.location.href = {% block backa %}{% endblock %}">
+        <i class="fas fa-angle-double-left fa-lg" style="color:white;"></i>
+      </button>
+      {% endif %}
+      <h1 class="text-center ">EQUATION SOLVER</h1>
+    </div>
+    <!-- <br><br></br><br></br> -->
+    <div class="container">
+    {% block body %}{% endblock %}
+    </div>
+    {% block out %}{% endblock %}
+  </body>
+
+</html>
