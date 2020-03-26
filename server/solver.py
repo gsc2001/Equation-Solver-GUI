@@ -1,7 +1,4 @@
-try:
-    from base.equation_solver_base import *
-except:
-    print('Not able to import equation solver base')
+from base.equation_solver_base import *
 
 def get_eqns():
     n = int(input("Enter no. of eqns"))
