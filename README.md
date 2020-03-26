@@ -29,7 +29,7 @@ This script will install all the dependicies
 
 ##### Note:
 
-You need to have nodejs and python3 installed on your system.    
+You need to have nodejs, python3 and swig installed on your system.    
 * To install nodejs go [ here ](https://nodejs.org/en/download/)
 * Linux usually comes installed with python3. Type following to check
   ```bash
@@ -42,7 +42,18 @@ You need to have nodejs and python3 installed on your system.
   $ sudo apt-get update
   $ sudo apt-get install python3
   ```
+* Swig can be downloaded and installed through apt easily using following command
+  ```bash
+  $ sudo apt install swig
+  ```
 
+## Building
+To build just run the build.sh file
+  ```bash
+  $ bash build.sh
+  ```
+#### Note:
+    You need to build/install dependicies only once
 
 ## Running :runner:
 To start application, just type this in terminal after going to the extracted folder
