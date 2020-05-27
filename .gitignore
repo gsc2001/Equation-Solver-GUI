@@ -1,3 +1,8 @@
 gui/node_modules
 server/__pycache__
 server/base/__pycache__
+server/base/build
+server/base/_equation_solver_base.cpython-37m-x86_64-linux-gnu.so
+server/base/_equation_solver_base.cpython-38-x86_64-linux-gnu.so
+server/base/equation_solver_base.py
+server/base/equation_solver_base_wrap.cxx
