@@ -9,6 +9,6 @@
   "author": "Gurkirat Singh",
   "license": "ISC",
   "dependencies": {
-    "electron": "^8.2.4"
+    "electron": "^9.4.0"
   }
 }
